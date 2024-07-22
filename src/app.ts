@@ -62,25 +62,6 @@ app.get("/dogs/:id", async (req, res) => {
   }
 });
 
-// function validateData(obj: Object): {
-//   valid: boolean;
-//   invalidKey?: string;
-// } {
-//   const defaultDog: Dog = {
-//     age: 0,
-//     name: "",
-//     breed: "",
-//     description: "",
-//   };
-
-//   for (const key in obj) {
-//     if (!defaultDog.hasOwnProperty(key)) {
-//       return { valid: false, invalidKey: key };
-//     }
-//   }
-//   return { valid: true };
-// }
-
 function validateData(
   body: Dog | "name" | "description" | "breed" | "age"
 ) {
